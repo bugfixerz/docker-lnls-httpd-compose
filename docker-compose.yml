@@ -2,7 +2,7 @@ version: '2'
 services:
     lnls-httpd:
         container_name: lnls-httpd
-        image: httpd/httpd:latest
+        image: httpd:latest
         ports:
             - 80:80
         volumes:
