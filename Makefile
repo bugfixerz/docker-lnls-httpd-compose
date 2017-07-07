@@ -16,9 +16,7 @@ HTTD_HTML_FOLDER = /home/opr24/docker-storage/lnls-httpd
 
 all:
 
-install:
-	mkdir -p ${HTTD_HTML_FOLDER}
-	cp -R public_html/ ${HTTD_HTML_FOLDER}
+install: configure
 	mkdir -p ${DOCKER_FILES_DEST}
 	cp --preserve=mode ${SRC_DOCKER_COMPOSE_FILE} ${DOCKER_FILES_DEST}
 	cp --preserve=mode ${SRC_SERVICE_FILE} ${SERVICE_FILE_DEST}
@@ -31,3 +29,8 @@ uninstall:
 	rm -f ${SERVICE_FILE_DEST}/${SRC_SERVICE_FILE}
 	rm -f -R ${DOCKER_FILES_DEST}
 	systemctl daemon-reload
+
+configure:
+	mkdir -p ${HTTD_HTML_FOLDER}
+	cp public_html/* ${HTTD_HTML_FOLDER}
+	sed -i "s;http://10.0.4.69;https://10.0.6.49;g" public_html/index.html
