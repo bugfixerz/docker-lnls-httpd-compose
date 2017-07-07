@@ -10,7 +10,7 @@ SRC_SERVICE_FILE = ${SERVICE_NAME}.service
 SERVICE_FILE_DEST = /etc/systemd/system
 
 # HTML placement folder
-HTTD_HTML_FOLDER = /home/opr24/docker-storage/lnls-httpd
+HTTP_HTML_FOLDER = /home/opr24/docker-storage/lnls-httpd
 
 .PHONY: all install uninstall
 
@@ -31,6 +31,6 @@ uninstall:
 	systemctl daemon-reload
 
 configure:
-	mkdir -p ${HTTD_HTML_FOLDER}
-	cp public_html/* ${HTTD_HTML_FOLDER}
-	sed -i "s;http://10.0.4.69;https://10.0.6.49;g" public_html/index.html
+	mkdir -p ${HTTP_HTML_FOLDER}
+	cp public_html/* ${HTTP_HTML_FOLDER}
+	sed -i "s;http://10.0.4.69;https://10.0.6.49;g" ${HTTP_HTML_FOLDER}/index.html
