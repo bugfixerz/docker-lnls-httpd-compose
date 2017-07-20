@@ -1,0 +1,64 @@
+#header {
+        position: relative;
+
+        height: 125px;
+        width: 85%;
+        margin-top: 25px;
+        margin-left: 7.5%;
+}
+
+#header_title {
+	position: relative;
+
+	top: 25px;
+	font-family: "Open Sans, Arial";
+	font-size: 30px;
+	font-weight: bold;
+
+	float: left;
+	height: 100%;
+
+}
+
+#header_logo {
+        height: 100%;
+        float: right;
+}
+
+#text {
+	position: relative;
+	top: 25px;
+	width: 95%;
+	margin-top: 20px;
+	padding-left: 7.5%;
+}
+
+#text table.css-releases {
+
+	position: relative;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 30%;
+	width: 40%;
+	padding: 0;
+
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+        border-collapse: collapse;
+}
+
+#text table.css-releases td.products {
+	text-align: left;
+	padding: 3px;
+}
+
+#text table.css-releases td {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+        border-collapse: collapse;
+
+        text-align: center;
+}
