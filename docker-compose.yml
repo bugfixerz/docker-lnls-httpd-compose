@@ -2,8 +2,8 @@ version: '2'
 services:
     lnls-httpd:
         container_name: lnls-httpd
-        image: httpd:latest
+        image: gciotto/httpd-lnls
         ports:
             - 80:80
         volumes:
-            - /home/opr24/docker-storage/lnls-httpd:/usr/local/apache2/htdocs
+            - /home/opr24/docker-storage/lnls-httpd/:/var/www/html
