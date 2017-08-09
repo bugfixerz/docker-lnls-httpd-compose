@@ -290,7 +290,7 @@ $servers->setValue('server','name','Controls Group LDAP Server');
    'ldaps://ldap.example.com/',
    'ldapi://%2fusr%local%2fvar%2frun%2fldapi'
            (Unix socket at /usr/local/var/run/ldap) */
-$servers->setValue('server','host','10.0.6.34');
+$servers->setValue('server','host','10.0.4.57');
 
 /* The port your LDAP server listens on (no quotes). 389 is standard. */
 $servers->setValue('server','port',389);

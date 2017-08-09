@@ -42,7 +42,7 @@ configure:
 	cp public_html/index.html ${HTTP_HTML_FOLDER}
 	# Copies lnls-studio products
 	cp -r public_html/lnls-studio ${HTTP_HTML_FOLDER}
-	sed -i "s;http://10.0.4.69;https://10.0.6.34;g" ${HTTP_HTML_FOLDER}/index.html
+	sed -i "s;http://10.0.4.69;https://10.0.4.57;g" ${HTTP_HTML_FOLDER}/index.html
 	# Configures phpLDAPadmin
 	wget ${PHPLDAPADMIN_LINK}
 	unzip ${PHPLDAPADMIN}.zip -d ${HTTP_HTML_FOLDER}
