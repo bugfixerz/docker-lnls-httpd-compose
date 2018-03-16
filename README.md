@@ -1,3 +1,5 @@
+**Deprecated repository. Use [this](https://github.com/lnls-sirius/docker-httpd-apache) instead.**
+
 # # Docker LNLS HTTPD Composed
 
 Docker compose files for Control Group's http server container.
